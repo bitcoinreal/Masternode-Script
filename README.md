@@ -1,3 +1,6 @@
+#All credits to my man marsmenschen, great job!
+
+
 # Nodemaster
 
 The **Nodemaster** scripts is a collection of utilities to manage, setup and update masternode instances.
