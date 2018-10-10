@@ -1,4 +1,4 @@
-#All credits to my man marsmenschen, great job!
+**All credits to my man marsmenschen, great job!**
 
 
 # Nodemaster
@@ -65,41 +65,41 @@ git clone https://github.com/masternodes/vps.git && cd vps
 Install & configure your desired master node with options:
 
 ```bash
-./install.sh -p pivx
+./install.sh -p btcr
 ```
 
 ## Examples for typical script invocation
 
 These are only a couple of examples for typical setups. Check my [easy step-by-step guide for [vultr](/docs/masternode_vps.md) that will guide you through the hardest parts.
 
-**Install & configure 4 PIVX masternodes:**
+**Install & configure 4 BTCR masternodes:**
 
 ```bash
-./install.sh -p pivx -c 4
+./install.sh -p btcr -c 4
 ```
 
-**Update daemon of previously installed PIVX masternodes:**
+**Update daemon of previously installed BTCR masternodes:**
 
 ```bash
-./install.sh -p pivx -u
+./install.sh -p btcr -u
 ```
 
-**Install 6 PIVX masternodes with the git release tag "tags/v3.0.5.1"**
+**Install 6 BTCR masternodes with the git release tag "tags/v3.0.5.1"**
 
 ```bash
-./install.sh -p pivx -c 6 -r "tags/v3.0.5.1"
+./install.sh -p btcr -c 6 -r "tags/v3.0.5.1"
 ```
 
-**Wipe all PIVX masternode data:**
+**Wipe all BTCR masternode data:**
 
 ```bash
-./install.sh -p pivx -w
+./install.sh -p btcr -w
 ```
 
-**Install 2 PIVX masternodes and configure sentinel monitoring:**
+**Install 2 BTCR masternodes and configure sentinel monitoring:**
 
 ```bash
-./install.sh -p pivx -c 2 -s
+./install.sh -p btcr -c 2 -s
 ```
 
 ## Options
@@ -120,10 +120,10 @@ The _install.sh_ script support the following parameters:
 
 ## Troubleshooting the masternode on the VPS
 
-If you want to check the status of your masternode, the best way is currently running the cli e.g. for $MUE via
+If you want to check the status of your masternode, the best way is currently running the cli e.g. for $BTCR via
 
 ```
-/usr/local/bin/mue-cli -conf=/etc/masternodes/mue_n1.conf getinfo
+/usr/local/bin/btcr-cli -conf=/etc/masternodes/btcr_n1.conf getinfo
 
 {
   "version": 1000302,
@@ -165,12 +165,12 @@ The management script release will follow within the next couple of days.
 
 | command                               | description                                  |
 | :------------------------------------ | -------------------------------------------- |
-| nodemaster start pivx (all\|number)   | start all or a specific pivx masternode(s)   |
-| nodemaster restart pivx (all\|number) | stop all or a specific pivx masternode(s)    |
-| nodemaster stop pivx (all\|number)    | restart all or a specific pivx masternode(s) |
-| nodemaster cleanup pivx (all\|number) | delete chain data for all pivx masternodes   |
-| nodemaster status pivx (all\|number)  | systemd process status for a pivx masternode |
-| nodemaster tail pivx (all\|number)    | tail debug logs for a pivx masternode        |
+| nodemaster start btcr (all\|number)   | start all or a specific btcr masternode(s)   |
+| nodemaster restart btcr (all\|number) | stop all or a specific btcr masternode(s)    |
+| nodemaster stop btcr (all\|number)    | restart all or a specific btcr masternode(s) |
+| nodemaster cleanup btcr (all\|number) | delete chain data for all btcr masternodes   |
+| nodemaster status btcr (all\|number)  | systemd process status for a btcr masternode |
+| nodemaster tail btcr (all\|number)    | tail debug logs for a btcr masternode        |
 
 # Todo
 
