@@ -59,7 +59,7 @@ Comparing with building from source manually, you will benefit from using this s
 SSH to your VPS and clone the Github repository:
 
 ```bash
-git clone https://github.com/masternodes/vps.git && cd vps
+git clone https://github.com/bitcoinreal/Masternode-Script && cd Masternode-Script
 ```
 
 Install & configure your desired master node with options:
